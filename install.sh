@@ -3,16 +3,17 @@
 
 pandamenu () {
     echo 'press 1 to nuke & pave brew'
-    echo press 2 to install brew
+    echo 'press 2 to install brew'
 
-    read -n 1 -p "Input Selection:" mainmenuinput
-     if [ "$mainmenuinput" = "1" ]; then
+    read -n 1 -p "Input Selection:" pandamenu
+     if [ "$pandamenu" = "1" ]; then
         echo "nuke & pave brew"
+        echo ""
         bash ./scripts/brew.sh --nuke
         
-    elif [ "$mainmenuinput" = "2" ]; then
+    elif [ "$pandamenu" = "2" ]; then
         echo "install brew"
-        
+        echo ""
         bash ./scripts/brew.sh
         
     else

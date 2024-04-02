@@ -27,3 +27,10 @@ brew update
 
 echo "Upgrading Homebrew..."
 brew upgrade
+
+
+echo "Installing Homebrew Formulae from Formulae.md ..."
+brew install $(cat ./scripts/Formulae.md)
+
+echo "Installing Homebrew Casks from Casks.md ..."
+brew install $(cat ./scripts/Casks.md)

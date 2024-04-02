@@ -1,0 +1,3 @@
+bruno
+obsidian
+iterm2
