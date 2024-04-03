@@ -33,3 +33,6 @@ brew install $(cat ./scripts/Formulae.md)
 
 echo "Installing Homebrew Casks from Casks.md ..."
 brew install $(cat ./scripts/Casks.md)
+
+echo "Cleaning up Homebrew..."
+brew cleanup
